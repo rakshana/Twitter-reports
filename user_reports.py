@@ -61,6 +61,8 @@ class Streamer(TwythonStreamer):
                         self.report[self.minute][word] = 1
                     else:
                         self.report[self.minute][word] += 1
+        else:
+            self.on_error(400, data)
 
     def print_user_report(self):
         if self.minute >= 5:
