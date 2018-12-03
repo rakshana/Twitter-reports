@@ -38,4 +38,4 @@ In Python console,
     
 ## Running the code
 
-Run user_reports.py.
+Run twitter_reports.py.
