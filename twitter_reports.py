@@ -70,7 +70,7 @@ class Streamer(TwythonStreamer):
         else:
             report_to_print = self.report[self.minute]
         if report_to_print == {}:
-            print 'No tweers this round'
+            print 'No tweets this round'
         else:
             for user in report_to_print:
                 print user + ' tweeted ' + str(report_to_print[user]) + ' time(s).'
