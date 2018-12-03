@@ -12,16 +12,29 @@ Take note of your Access Token and Access Token Secret
 
 Add the aforementioned keys to a json file:
 
-import json
-
-credentials = {}  
-credentials['consumer_key'] = ...  
-credentials['consumer_secret''] = ...  
-credentials['access_key'] = ...  
-credentials['access_secret'] = ...
+    import json
+    
+    credentials = {}  
+    credentials['consumer_key'] = ...  
+    credentials['consumer_secret''] = ...  
+    credentials['access_key'] = ...  
+    credentials['access_secret'] = ...
 
 with open("twitter_credentials.json", "w") as file:  
     json.dump(credentials, file)
+    
+## Install dependencies
+In terminal,
+
+    pip install nltk
+    pip install urlparse
+    pip install twython
+
+In Python console,
+
+    import nltk
+    nltk.download('punkt')
+    nltk.download('stopwords')
     
 ## Running the code
 
